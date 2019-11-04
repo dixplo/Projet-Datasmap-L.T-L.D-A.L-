@@ -4,13 +4,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 
 
 @Entity
 public class Event {
 
-	// fields
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
@@ -18,6 +19,11 @@ public class Event {
 	private String description;
 	private int date;
 	
+	@ManyToOne
+	private Type type;
+	
+	@OneToMany
+	private Place place;
 	
 	public Event(String name, String description,int date) {
 		this.name = name;

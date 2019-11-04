@@ -1,9 +1,13 @@
 package spring.s4.datasmap.model;
 
+import java.util.List;
+
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Type {
@@ -14,6 +18,9 @@ public class Type {
 	private int id;
 	private String name;
 	private String description;
+	
+	//@ManyToOne
+	List<Event> event;
 	
 	
 

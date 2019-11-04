@@ -1,15 +1,18 @@
 package spring.s4.datasmap.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Place {
 
-	
-	// fields
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
@@ -17,8 +20,13 @@ public class Place {
 	private Float latitude;
 	private Float longitude;
 
+	//@ManyToOne
+	List<Event> event;
 	
-	/*Controller*/
+	//@OneToMany
+	private Place place;
+
+	
 	public Place(String address, Float latitude, Float longitude) {
 		this.address = address;
 		this.latitude = latitude;

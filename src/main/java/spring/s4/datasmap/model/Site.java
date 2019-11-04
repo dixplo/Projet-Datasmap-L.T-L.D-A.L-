@@ -1,9 +1,12 @@
 package spring.s4.datasmap.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Site {
@@ -16,6 +19,8 @@ public class Site {
 	private String name;
 	private String description;
 	
+	//@ManyToOne
+	List<Place> place;
 	
 	
 	public Site(String name, String description) {
