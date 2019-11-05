@@ -5,7 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 
 
 
@@ -20,10 +19,10 @@ public class Event {
 	private int date;
 	
 	@ManyToOne
-	private Type type;
+	private Type ty;
 	
-	@OneToMany
-	private Place place;
+	@ManyToOne
+	private Place pl;
 	
 	public Event(String name, String description,int date) {
 		this.name = name;
@@ -61,4 +60,5 @@ public class Event {
 		this.date = date;
 	}
 }
+
 

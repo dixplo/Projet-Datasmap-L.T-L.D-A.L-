@@ -20,11 +20,11 @@ public class Place {
 	private Float latitude;
 	private Float longitude;
 
-	//@ManyToOne
-	List<Event> event;
+	@OneToMany(mappedBy="pl")
+	private List<Event>Events;
 	
-	//@OneToMany
-	private Place place;
+	@OneToMany(mappedBy="pl2")
+	private List<Site>Sites;
 
 	
 	public Place(String address, Float latitude, Float longitude) {

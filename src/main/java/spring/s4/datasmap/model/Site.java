@@ -19,8 +19,8 @@ public class Site {
 	private String name;
 	private String description;
 	
-	//@ManyToOne
-	List<Place> place;
+	@ManyToOne
+	private Place pl2;
 	
 	
 	public Site(String name, String description) {

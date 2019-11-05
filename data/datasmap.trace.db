@@ -1,0 +1,8 @@
+2019-11-04 11:00:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" non trouvée
+Table "USER" not found; SQL statement:
+insert into User values (1,"joe","paul","dqfq@gmial.com") [42102-199]
+2019-11-04 11:04:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" non trouvée
+Table "USER" not found; SQL statement:
+insert into User values (1,"joe","paul","dqfq@gmial.com") [42102-199]

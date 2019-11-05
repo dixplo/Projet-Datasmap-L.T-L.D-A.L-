@@ -16,9 +16,7 @@ public class User {
 	private String name;
 	private String lastName;
 	private String email;
-	private String password;
-	private String mobile;
-	private String status;
+
 
 
 	public int getId() {
@@ -53,7 +51,7 @@ public class User {
 		this.email = email;
 	}
 
-	public String getPassword() {
+	/*public String getPassword() {
 		return password;
 	}
 
@@ -75,7 +73,7 @@ public class User {
 
 	public void setStatus(String status) {
 		this.status = status;
-	}
+	}*/
 
 
 }
