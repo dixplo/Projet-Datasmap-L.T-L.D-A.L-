@@ -16,7 +16,8 @@ public class User {
 	private String name;
 	private String lastName;
 	private String email;
-
+	private String password;
+	private String mobile;
 
 
 	public int getId() {
@@ -51,7 +52,7 @@ public class User {
 		this.email = email;
 	}
 
-	/*public String getPassword() {
+	public String getPassword() {
 		return password;
 	}
 
@@ -67,7 +68,7 @@ public class User {
 		this.mobile = mobile;
 	}
 
-	public String getStatus() {
+	/*public String getStatus() {
 		return status;
 	}
 
